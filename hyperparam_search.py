@@ -23,17 +23,6 @@ import matplotlib
 # surprisal functions #
 #######################
 
-# def get_surprisal(text, tokenizer, model):
-#     encoded_input = tokenizer.encode(text, return_tensors='pt')
-#     with torch.no_grad():
-#         outputs = model(encoded_input)
-#         logits = outputs.logits
-#     probabilities = torch.nn.functional.softmax(logits, dim=-1)
-#     selected_logits = torch.gather(probabilities, -1, encoded_input.unsqueeze(-1)).squeeze(-1)
-#     surprisal_values = -torch.log(selected_logits)
-#     #print(surprisal_values)
-#     return surprisal_values
-
 def get_surprisal(prompt, toker, model):
     inputs = toker(prompt, return_tensors="pt")
     input_ids, output_ids = inputs["input_ids"], inputs["input_ids"][:, 1:]
