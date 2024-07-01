@@ -1,4 +1,4 @@
-# Locally Biased Transformers Better Align with Human Reading Times
+## Locally Biased Transformers Better Align with Human Reading Times
 
 This repository contains the code supporting the findings of the paper "Locally Biased Transformers Better Align with Human Reading Times", published in the 13th edition of the Workshop on Cognitive Modeling and Computational Linguistics (CMCL 2024).
 
