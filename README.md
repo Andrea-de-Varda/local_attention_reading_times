@@ -13,4 +13,4 @@ The script `hyperparam_search.py` uses a Tree-structured Parzen Estimator algori
 The script `local_attention.py` uses the hyperparameters identified with the previous script to compute surprisal values used to predict reading times in the various corpora. 
 
 ### Data
-The psychometric data is stored as a pickle file in `data.pkl`. The data we used was previously collected and released by other research groups, so if you use it, be sure to cite them. The appropriate references are provided in the article.
+The psychometric data is stored as a pickle file in `data.pkl`. The data we used was previously collected and released by other research groups, so if you use it, be sure to cite them. The appropriate references are provided in the article (§3.2).
